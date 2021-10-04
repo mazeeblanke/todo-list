@@ -1,0 +1,52 @@
+$breakpoints: (
+  xsmall: (start: null, end: 543),
+  small: (start: 544, end: 767),
+  medium: (start: 768, end: 1023),
+  large: (start: 1024, end: 1279),
+  xlarge: (start: 1280, end: 1439),
+  xxlarge: (start: 1440, end: 1599),
+  xxxlarge: (start: 1600, end: null)
+);
+
+$main-col-widths: (
+  xxxlarge: 768px,
+  xxlarge: 768px,
+  xlarge: 768px,
+  large: 968px,
+  medium: 'fluid',
+  small: 'fluid',
+  xsmall: 'fluid'
+);
+
+// Inner gutters, in px or vw, of each breakpoint
+$inner-gutters: (
+  xxxlarge: 16px,
+  xxlarge: 16px,
+  xlarge: 12px,
+  large: 12px,
+  medium: 10px,
+  small: 10px,
+  xsmall: 10px
+);
+
+// Outer gutters, in px or vw, of each breakpoint
+$outer-gutters: (
+  xxxlarge: 60px,
+  xxlarge: 56px,
+  xlarge: 48px,
+  large: 42px,
+  medium: 36px,
+  small: 24px,
+  xsmall: 20px
+);
+
+// How many columns are in each breakpoint
+$column-count: (
+  xxxlarge: 14,
+  xxlarge: 14,
+  xlarge: 14,
+  large: 12,
+  medium: 12,
+  small: 12,
+  xsmall: 6
+);

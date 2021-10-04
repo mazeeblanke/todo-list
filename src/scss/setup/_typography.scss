@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'Rosart';
+  src: url('../../assets/fonts/rosart/Rosart-RegularItalic.woff2') format('woff2'),
+      url('../../assets/fonts/rosart/Rosart-RegularItalic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rosart';
+  src: url('../../assets/fonts/rosart/Rosart-Regular.woff2') format('woff2'),
+      url('../../assets/fonts/rosart/Rosart-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lelo';
+  src: url('../../assets/fonts/lelo/Lelo-MediumItalic.woff2') format('woff2'),
+      url('../../assets/fonts/lelo/Lelo-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lelo';
+  src: url('../../assets/fonts/lelo/Lelo-RegularItalic.woff2') format('woff2'),
+      url('../../assets/fonts/lelo/Lelo-RegularItalic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lelo';
+  src: url('../../assets/fonts/lelo/Lelo-Regular.woff2') format('woff2'),
+      url('../../assets/fonts/lelo/Lelo-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lelo';
+  src: url('../../assets/fonts/lelo/Lelo-Medium.woff2') format('woff2'),
+      url('../../assets/fonts/lelo/Lelo-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+// set to 100% to use the browsers font size as a base
+$global-font-size: 100% !default;
+
+$serif-font: serif;
+$serif-font--loaded: 'Rosart', #{$serif-font};
+$serif-font-loaded-class: 'wf-rosart-n4-active';
+
+// wf-lelo-n4-active wf-rosart-n4-active wf-active
+$sans-serif-font: Helvetica, Arial, sans-serif;
+$sans-serif-font--loaded: 'Lelo', #{$sans-serif-font};
+$sans-serif-font-loaded-class: 'wf-lelo-n4-active';
+
+@import 'typography/base/lelo-500';
+@import 'typography/base/rosart-400';
+
+@import 'typography/heading';
+@import 'typography/body';

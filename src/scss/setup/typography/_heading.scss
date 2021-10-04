@@ -1,0 +1,21 @@
+// Body Font 
+$f-head:(
+  font-family: $serif-font,
+  font-family-loaded: $serif-font--loaded,
+  font-loaded-class: $serif-font-loaded-class,
+  settings: (
+    'large': $l500-desktop,
+    'xsmall': $l500-mobile,
+  )
+);
+
+@mixin f-head() {
+  @include font-styles($f-head);
+  font-kerning: normal;
+  font-variant-ligatures: common-ligatures;
+}
+
+%f-head,
+.f-head {
+  @include f-head;
+}

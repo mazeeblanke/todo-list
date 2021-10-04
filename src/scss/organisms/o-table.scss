@@ -1,0 +1,63 @@
+.o-table {
+  @extend %f-body;
+  border-bottom: 1px solid $color__gray-20;
+  border-spacing: 0;
+  margin-top: 20px;
+
+  tbody {
+    display: block;
+    height: 500px;
+    overflow: auto;
+
+    @include breakpoint('large+') {
+      height: 550px;
+    }
+  }
+
+  thead, tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  tbody {
+    border-left: 1px solid $color__gray-20;
+    border-right: 1px solid $color__gray-20;
+  }
+
+  td {
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 1px solid $color__gray-20;
+    vertical-align: middle;
+    text-align: left;
+    padding: 4px;
+
+    &:first-child {
+      width: 35px;
+      padding-left: 14px;
+      border-right: 1px solid $color__gray-20;
+    }
+
+    &:last-child {
+      width: 95px;
+      padding-left: 8px;
+      border-left: 1px solid $color__gray-20;
+    }
+  }
+
+  th {
+    padding: 5px;
+    background-color: $color__bg-grey;
+
+    &:first-child {
+      width: 35px;
+    }
+
+    &:last-child {
+      width: 95px;
+      text-align: left;
+      padding-left: 8px;
+    }
+  }
+}

@@ -1,10 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import WebFont from 'webfontloader';
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import HomePage from 'views/Home/HomePage/HomePage';
+import initStore from './store';
+
+WebFont.load({
+  custom: {
+    families: ['Lelo', 'Rosart'],
+    urls: ['/app.css'],
+  },
+});
+
+const store = initStore();
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <Router>
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+        </Switch>
+      </Router>
+    </Provider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );

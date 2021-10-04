@@ -1,0 +1,9 @@
+export const FETCH_TODOS = 'FETCH_TODOS';
+
+export const SET_TODOS_LOADING = 'SET_TODOS_LOADING';
+
+export const SET_TODOS = 'SET_TODOS';
+
+export const SET_TODOS_LOAD_ERROR = 'SET_TODOS_LOAD_ERROR';
+
+export const FILTER_TODOS = 'FILTER_TODOS';

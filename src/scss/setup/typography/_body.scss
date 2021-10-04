@@ -1,0 +1,44 @@
+// Body Font 
+$f-body:(
+  font-family: $serif-font,
+  font-family-loaded: $serif-font--loaded,
+  font-loaded-class: $serif-font-loaded-class,
+  settings: (
+    'large': $r400-desktop-01,
+    'xsmall': $r400-mobile-01,
+  )
+);
+
+@mixin f-body() {
+  @include font-styles($f-body);
+  font-kerning: normal;
+  font-variant-ligatures: common-ligatures;
+}
+
+%f-body,
+.f-body {
+  @include f-body;
+}
+
+
+// Strong Body Font 
+$f-sbody:(
+  font-family: $serif-font,
+  font-family-loaded: $serif-font--loaded,
+  font-loaded-class: $serif-font-loaded-class,
+  settings: (
+    'large': $r400-desktop-02,
+    'xsmall': $r400-mobile-02,
+  )
+);
+
+@mixin f-sbody() {
+  @include font-styles($f-sbody);
+  font-kerning: normal;
+  font-variant-ligatures: common-ligatures;
+}
+
+%f-sbody,
+.f-sbody {
+  @include f-sbody;
+}

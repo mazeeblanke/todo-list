@@ -1,0 +1,25 @@
+// Main colors
+$color__warm-red-50: #C70B03;
+
+// Colors - Grayscale
+$color__black:   #000000;
+$color__gray-5:  #F1F1F1;
+$color__gray-10: #E2E2E2;
+$color__gray-20: #C7C7C7;
+$color__gray-30: #ACACAC;
+$color__gray-40: #919191;
+$color__gray-50: #767676;
+$color__gray-60: #5E5E5E;
+$color__gray-70: #474747;
+$color__gray-80: #2F2F2F;
+$color__gray-90: #181818;
+$color__white:   #FFFFFF;
+
+
+// Colors by usage - use these!
+$color__background: $color__white;
+$color__heading: $color__black;
+$color__text: $color__gray-90;
+$color__text-light: $color__white;
+$color__bg-red: $color__warm-red-50;
+$color__bg-grey: $color__gray-10;
