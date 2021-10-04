@@ -15,6 +15,8 @@ const TodoForm: FC<ITodoFormProps> = (props) => {
 
   useEffect(() => {
     props.filterTodos(filters);
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [filters]);
 
   const handleNewInputChange = (e: ChangeEvent<HTMLInputElement>): void => {

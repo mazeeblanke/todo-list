@@ -22,6 +22,8 @@ function HomePage(props: IHomePageInterface) {
   const { todos, isFetchingTodos, loadError } = props;
   useEffect(() => {
     props.fetchTodos();
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
