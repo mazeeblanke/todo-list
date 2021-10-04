@@ -25,10 +25,12 @@ $column-spans__form-group: (
 
   &__input {
     @include input;
+    @extend %f-sbody;
   }
 
   &__select {
     @include input;
+    @extend %f-sbody;
     height: 44px;
   }
 }
