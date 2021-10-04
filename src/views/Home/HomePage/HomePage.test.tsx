@@ -9,13 +9,13 @@ import {
   render, fireEvent, screen, waitForElementToBeRemoved,
 } from 'utils/test-utils';
 import todos from 'utils/mocks/todos';
-import { LOADING_TEXT, NO_RESULT } from 'utils/constants';
+import { API_HOST, LOADING_TEXT, NO_RESULT, TODOS_PATH } from 'utils/constants';
 
 // We use msw to intercept the network request during the test,
 // and return the response 'John Smith' after 150ms
 // when receiving a get request to the `/api/user` endpoint
 const handlers = [
-  rest.get('https://jsonplaceholder.typicode.com/todos', (req, res, ctx) => res(ctx.json(todos), ctx.delay(20))),
+  rest.get(`${API_HOST+TODOS_PATH}`, (req, res, ctx) => res(ctx.json(todos), ctx.delay(20))),
 ];
 
 const server = setupServer(...handlers);
